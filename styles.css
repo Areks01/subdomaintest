@@ -1,0 +1,85 @@
+@font-face {
+    font-family: BleedingPixels;
+    src: url(fonts/BleedingPixels.ttf);
+}
+
+body{
+    background-color: rgb(246, 127, 0);
+}
+
+header{
+    text-align: center;
+    font-family: BleedingPixels;
+    font-size: 7vw;
+    padding: 1vw;
+    animation: glow 800ms ease-in-out infinite alternate;
+}
+
+.footer{
+    font-family: BleedingPixels;
+    font-size: 7vw;
+    padding: 1vw;
+
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -5%);
+    margin: 0 auto;
+}
+
+.footer a{
+    animation: loada 1500ms;
+    animation-iteration-count: infinite;
+}
+.footer b{
+    animation: loadb 1500ms;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+.footer c{
+    animation: loadc 1500ms;
+    animation-iteration-count: infinite;
+    animation-delay: 800ms;
+}
+
+img{
+    max-width: 25%;
+    margin: auto;
+    display: block;
+    border: 8px solid;
+    border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+    border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1;
+}
+
+@keyframes loada{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes loadb{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}@keyframes loadc{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes glow{
+    from {
+        text-shadow: 0 0 20px #a92d2d;
+      }
+      to {
+        text-shadow: 0 0 30px #f79b07, 0 0 10px #e0fd00;
+      }
+}
